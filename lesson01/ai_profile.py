@@ -1,3 +1,4 @@
+# AI Project: Lesson 01 - AI Profile Generator
 name = input("What is your name? ")
 age = int(input("How old are you? "))
 english_level = input("What is your English level? ")

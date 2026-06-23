@@ -1,3 +1,4 @@
+# AI Project: Lesson 04 - AI Skill Manager
 skills = []
 skills_count = int(input("How many skills do you have? "))
 print("\nEnter your skills:")

@@ -1,3 +1,4 @@
+# AI Project: Lesson 02 - Career Advisor
 age = int(input("How old you are? "))
 english = input("What is your English level? ")
 py = int(input("What is your Python level? "))

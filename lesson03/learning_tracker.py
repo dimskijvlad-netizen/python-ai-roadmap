@@ -1,3 +1,4 @@
+# AI Project: Lesson 03 - Learning Tracker
 topics_count = int(input("How many topics did you learn today? "))
 topics = []
 print("Enter each topic: ")
