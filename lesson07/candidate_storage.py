@@ -20,7 +20,7 @@ def write_in_file(json_data):
     with open("candidate.json","w") as file:
         file.write(json_data)
     return file
-def read_file():
+def read_file(file):
     with open("candidate.json","r") as file:
         readf = file.read()
     return readf
