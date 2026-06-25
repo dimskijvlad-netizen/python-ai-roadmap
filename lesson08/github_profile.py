@@ -5,10 +5,12 @@ def get_username():
 def get_user_data(username):
     url = f"https://api.github.com/users/{username}"
     response = requests.get(url)
-    data = response.json()
-    return data
+    if response.status_code == 200: return response.json()
+    else: return None
 def print_user_data(data):
     print(f"\nName:{data['name']}")
     print(f"Login:{data['login']}")
     print(f"Public repositories:{data['public_repos']}")
-print_user_data(get_user_data(get_username()))
+data = get_user_data(get_username())
+if data: print_user_data(data)
+else: print("User not found")
