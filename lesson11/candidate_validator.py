@@ -8,10 +8,10 @@ def get_candidate_data():
         print("Age must be a number ")
         return None, None, None
 def print_candidate_validation(name, age, english):
-    if name != None: 
+    if name is not None: 
         print("\nCandidate validated successfully")
         print(f"\nName: {name}")
         print(f"Age: {age}")
         print(f"English: {english}")
-    else: print("Candidate unvalidated")
+    else: print("Candidate validation failed")
 print_candidate_validation(*get_candidate_data())
